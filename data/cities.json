@@ -37,39 +37,15 @@
       "id": "98443197"
     },
     {
-      "id": "38dd",
-      "cityName": "Grabow",
-      "country": "Poland",
-      "emoji": "🇵🇱",
-      "date": "2024-06-24T21:44:06.474Z",
-      "notes": "test",
+      "id": "cd4d",
+      "cityName": "Tardaguila",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-06-25T10:02:06.506Z",
+      "notes": "dw",
       "position": {
-        "lat": "52.134842672036065",
-        "lng": "19.04595880589399"
-      }
-    },
-    {
-      "id": "da13",
-      "cityName": "Czersk",
-      "country": "Poland",
-      "emoji": "🇵🇱",
-      "date": "2024-06-24T21:46:57.462Z",
-      "notes": "test",
-      "position": {
-        "lat": "53.76250866831826",
-        "lng": "17.816488797769512"
-      }
-    },
-    {
-      "id": "06be",
-      "cityName": "Ljungby",
-      "country": "Sweden",
-      "emoji": "🇸🇪",
-      "date": "2024-06-24T21:52:23.238Z",
-      "notes": "test",
-      "position": {
-        "lat": "56.71738181852935",
-        "lng": "13.862522479762983"
+        "lat": "41.11378361022835",
+        "lng": "-5.5810546875"
       }
     }
   ]
