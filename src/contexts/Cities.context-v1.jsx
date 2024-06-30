@@ -9,7 +9,7 @@ import {
 
 const CitiesContext = createContext();
 
-const BASE_URl = "/.netlify/functions";
+const BASE_URl = "http://localhost:9000";
 
 const initialState = {
   cities: [],
@@ -71,7 +71,7 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       dispatch({ type: "loading" });
       try {
-        const res = await fetch(`${BASE_URl}/getCities`);
+        const res = await fetch(`${BASE_URl}/cities`);
         const data = await res.json();
         dispatch({ type: "cities/loaded", payload: data });
       } catch {
@@ -90,7 +90,7 @@ function CitiesProvider({ children }) {
 
       dispatch({ type: "loading" });
       try {
-        const res = await fetch(`${BASE_URl}/getCity?id=${id}`);
+        const res = await fetch(`${BASE_URl}/cities/${id}`);
         const data = await res.json();
         dispatch({ type: "city/loaded", payload: data });
       } catch {
@@ -106,11 +106,11 @@ function CitiesProvider({ children }) {
   async function createCity(newCity) {
     dispatch({ type: "loading" });
     try {
-      const res = await fetch(`${BASE_URl}/createCity`, {
+      const res = await fetch(`${BASE_URl}/cities`, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
-          "Content-Type": "application/json",
+          "content-Type": "application/json",
         },
       });
       const data = await res.json();
@@ -122,11 +122,10 @@ function CitiesProvider({ children }) {
       });
     }
   }
-
   async function deleteCity(id) {
     dispatch({ type: "loading" });
     try {
-      await fetch(`${BASE_URl}/deleteCity?id=${id}`, {
+      await fetch(`${BASE_URl}/cities/${id}`, {
         method: "DELETE",
       });
 
@@ -138,6 +137,7 @@ function CitiesProvider({ children }) {
       });
     }
   }
+
   return (
     <CitiesContext.Provider
       value={{
