@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
-import { CitiesProvider } from "./contexts/cities.context";
+import { CitiesProvider } from "./contexts/Cities.context";
 import { AuthProvider } from "./contexts/FakeAuth.context";
 import ProtectedRoutes from "./Pages/ProtectedRoutes";
 
