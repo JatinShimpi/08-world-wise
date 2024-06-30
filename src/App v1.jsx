@@ -11,19 +11,19 @@ import Form from "./components/Form";
 import { lazy, Suspense } from "react";
 import SpinnerFullPage from "./components/SpinnerFullPage";
 
-import Product from "./Pages/Product";
-import Pricing from "./Pages/Pricing";
-import Homepage from "./Pages/Homepage";
-import Login from "./Pages/Login";
-import PageNotFound from "./Pages/PageNotFound";
-import AppLayout from "./Pages/AppLayout";
+// import Product from "./Pages/Product";
+// import Pricing from "./Pages/Pricing";
+// import Homepage from "./Pages/Homepage";
+// import Login from "./Pages/Login";
+// import PageNotFound from "./Pages/PageNotFound";
+// import AppLayout from "./Pages/AppLayout";
 
-// const Homepage = lazy(()=>import("./pages/Homepage"))
-// const Product = lazy(() => import("./pages/Product"));
-// const Pricing = lazy(() => import("./pages/Pricing"));
-// const Login = lazy(() => import("./pages/Login"));
-// const AppLayout= lazy(() => import("./pages/AppLayout"));
-// const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const Homepage = lazy(()=>import("./pages/Homepage"))
+const Product = lazy(() => import("./pages/Product"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Login = lazy(() => import("./pages/Login"));
+const AppLayout= lazy(() => import("./pages/AppLayout"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 // dist/assets/index-4fe7c673.css   29.96 kB │ gzip:   5.02 kB
 // dist/assets/index-4a35703d.js   508.08 kB │ gzip: 148.38 kB
