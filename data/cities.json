@@ -47,6 +47,42 @@
         "lat": "41.11378361022835",
         "lng": "-5.5810546875"
       }
+    },
+    {
+      "id": "2856",
+      "cityName": "Peraleda de la Mata",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-06-30T22:02:08.043Z",
+      "notes": "",
+      "position": {
+        "lat": "39.860885329205935",
+        "lng": "-5.449218750000001"
+      }
+    },
+    {
+      "id": "2168",
+      "cityName": "Mogadouro",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2024-06-30T22:02:10.944Z",
+      "notes": "",
+      "position": {
+        "lat": "41.262516555607235",
+        "lng": "-6.723632812500001"
+      }
+    },
+    {
+      "id": "f586",
+      "cityName": "Huerta de Arriba",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-06-30T22:02:31.961Z",
+      "notes": "",
+      "position": {
+        "lat": "42.13246299159824",
+        "lng": "-3.0761718750000004"
+      }
     }
   ]
 }
